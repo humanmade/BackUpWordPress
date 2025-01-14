@@ -28,6 +28,15 @@ class Scheduled_Backup {
 	 */
 	private $slug = '';
 
+	/** @var string|null */
+	private $backup_filename = NULL;
+
+	/** @var string|null */
+	private $database_dump_filename = NULL;
+
+	/** @var Backup_Status|null */
+	private $status = NULL;
+
 	/**
 	 * The raw schedule options from the database
 	 *
